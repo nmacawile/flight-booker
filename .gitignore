@@ -18,3 +18,5 @@
 
 # Ignore to-do list
 /TODO
+
+docker-compose*
