@@ -17,5 +17,12 @@ WORKDIR /app
 COPY . .
 COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 
+ENV RAILS_ENV=production
+
+# dummy value
+ENV SECRET_KEY_BASE=1
+
+RUN rails assets:precompile
+
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
