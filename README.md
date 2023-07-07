@@ -1,4 +1,4 @@
-# Project: Fly me there
+# Project: Flight Booker
 
 ## What is this project?
 It is a dummy app designed to help the users find and book one-way flights to almost anywhere around the globe. The flights here were generated randomly and do not reflect real world data. The data on the international airports were scraped from [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_international_airports_by_country).
