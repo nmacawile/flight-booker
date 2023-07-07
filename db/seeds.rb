@@ -30,7 +30,7 @@ puts "Duration: #{Time.now - start}"
 
 start = Time.now
 print "Seeding US domestic flights..."
-400.times do
+200.times do
   origin, destination = Airport.joins(:country).where("countries.name" => "United States").order("RANDOM()").limit(2)
   depart_date = DateTime.parse("05/02/2018") + rand(11).days
   depart = depart_date + rand(24).hours
@@ -51,7 +51,7 @@ puts "Duration: #{Time.now - start}"
 
 start = Time.now
 print "Seeding flights..."
-4000.times do
+1500.times do
   origin, destination = Airport.order("RANDOM()").limit(2)
   depart_date = DateTime.parse("05/02/2018") + rand(11).days
   depart = depart_date + rand(24).hours
